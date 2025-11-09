@@ -1,0 +1,139 @@
+.pricing-section {
+  padding: 96px 0;
+  background-color: var(--background-default);
+}
+
+@media (max-width: 900px) {
+  .pricing-section {
+    padding: 64px 0;
+  }
+}
+
+.pricing-header {
+  text-align: center;
+  margin-bottom: 64px;
+}
+
+@media (max-width: 900px) {
+  .pricing-header {
+    margin-bottom: 48px;
+  }
+}
+
+.pricing-badge {
+  margin-bottom: 16px;
+  font-weight: 600;
+  color: var(--primary-main);
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 4px;
+  background-color: rgba(37, 99, 235, 0.1);
+}
+
+.pricing-title {
+  margin-bottom: 16px;
+  font-weight: 700;
+  font-size: 2.75rem;
+}
+
+@media (max-width: 600px) {
+  .pricing-title {
+    font-size: 2rem;
+  }
+}
+
+.pricing-description {
+  max-width: 700px;
+  margin: 0 auto;
+  font-weight: 400;
+  line-height: 1.6;
+  font-size: 1.25rem;
+}
+
+@media (max-width: 600px) {
+  .pricing-description {
+    font-size: 1rem;
+  }
+}
+
+.pricing-card {
+  height: 100%;
+  position: relative;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.pricing-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+}
+
+.pricing-card.recommended {
+  border: 2px solid var(--primary-main);
+}
+
+.pricing-card-content {
+  padding: 32px;
+}
+
+.recommended-badge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background-color: var(--primary-main);
+  color: white;
+  border-radius: 4px;
+  padding: 4px 12px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.plan-title {
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.plan-description {
+  margin-bottom: 24px;
+  height: 40px;
+  color: var(--text-secondary);
+}
+
+.plan-price-container {
+  margin-bottom: 24px;
+}
+
+.plan-price {
+  font-weight: 700;
+  display: flex;
+  align-items: flex-end;
+}
+
+.plan-price-period {
+  margin-left: 8px;
+  color: var(--text-secondary);
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 4px;
+}
+
+.plan-button {
+  margin-bottom: 24px;
+}
+
+.plan-features {
+  margin-bottom: 0;
+}
+
+.pricing-item {
+  padding: 8px 0;
+}
+
+.pricing-icon {
+  min-width: 28px;
+  color: var(--primary-main);
+}
+
+.pricing-text {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+}

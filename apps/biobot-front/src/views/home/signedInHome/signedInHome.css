@@ -1,0 +1,12 @@
+.chat-interface {
+  height: 100vh;
+  display: flex;
+  background-color: #f8fafc;
+  padding-top: 96px;
+}
+
+@media (max-width: 768px) {
+  .chat-interface {
+    flex-direction: column;
+  }
+}

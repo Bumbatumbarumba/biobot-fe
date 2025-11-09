@@ -1,0 +1,101 @@
+.how-it-works-section {
+  padding: 96px 0;
+  background-color: rgba(37, 99, 235, 0.03);
+  min-height: 100vh;
+}
+
+@media (max-width: 900px) {
+  .how-it-works-section {
+    padding: 64px 0;
+  }
+}
+
+.how-it-works-header {
+  text-align: center;
+  margin-bottom: 64px;
+}
+
+@media (max-width: 900px) {
+  .how-it-works-header {
+    margin-bottom: 48px;
+  }
+}
+
+.how-it-works-badge {
+  margin-bottom: 16px;
+  font-weight: 600;
+  color: var(--primary-main);
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 4px;
+  background-color: rgba(37, 99, 235, 0.1);
+}
+
+.how-it-works-title {
+  margin-bottom: 16px;
+  font-weight: 700;
+  font-size: 2.75rem;
+}
+
+@media (max-width: 600px) {
+  .how-it-works-title {
+    font-size: 2rem;
+  }
+}
+
+.how-it-works-description {
+  max-width: 700px;
+  margin: 0 auto;
+  font-weight: 400;
+  line-height: 1.6;
+  font-size: 1.25rem;
+}
+
+@media (max-width: 600px) {
+  .how-it-works-description {
+    font-size: 1rem;
+  }
+}
+
+.step-card {
+  padding: 32px;
+  height: 100%;
+  background-color: transparent;
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px;
+}
+
+.step-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: var(--primary-main);
+  opacity: 0.7;
+}
+
+.step-number {
+  font-weight: 800;
+  font-size: 3rem;
+  color: rgba(37, 99, 235, 0.1);
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+
+.step-content {
+  position: relative;
+  z-index: 1;
+}
+
+.step-title {
+  margin-bottom: 16px;
+  font-weight: 700;
+}
+
+.step-description {
+  color: var(--text-secondary);
+}
