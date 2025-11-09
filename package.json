@@ -4,6 +4,7 @@
   "license": "MIT",
   "scripts": {
     "start": "npx nx serve biobot-front",
+    "build": "npx nx build biobot-front",
     "build:prod": "npx nx build biobot-front --configuration=production"
   },
   "private": true,
