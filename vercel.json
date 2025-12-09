@@ -1,0 +1,6 @@
+{
+  "buildCommand": "npm run build",
+  "outputDirectory": "apps/biobot-front/dist",
+  "framework": "vite"
+}
+
