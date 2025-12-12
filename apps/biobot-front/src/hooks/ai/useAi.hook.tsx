@@ -19,9 +19,8 @@ export const useAi = (): UseAiResponse => {
     setLoading(true);
     setError(false);
 
-    const token = await getToken({ template: "supabase" });
+    const token = await getToken();
 
-    console.log("======= sending data:", body, token);
     await fetch(`${import.meta.env.VITE_BIOBOT_API_URL}query/submit/`, {
       method: "POST",
       headers: {
@@ -32,12 +31,10 @@ export const useAi = (): UseAiResponse => {
     })
       .then((response) => response.json() as Promise<ApiResponse>)
       .then((apiResponse) => {
-        console.log("======= received data:", apiResponse);
         setData(apiResponse);
         selectPrompt(apiResponse?.data);
 
         if (apiResponse?.data) {
-          console.log("======= fetching users queries");
           fetchUsersQueries();
         }
       })
