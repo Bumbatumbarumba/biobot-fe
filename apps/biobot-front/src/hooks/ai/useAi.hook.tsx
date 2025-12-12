@@ -19,7 +19,7 @@ export const useAi = (): UseAiResponse => {
     setLoading(true);
     setError(false);
 
-    const token = await getToken();
+    const token = await getToken({ template: "supabase" });
 
     console.log("======= sending data:", body, token);
     await fetch(`${import.meta.env.VITE_BIOBOT_API_URL}query/submit/`, {
